@@ -40,13 +40,6 @@
                                     <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="aio-9T-xl8"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Flips: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X5H-1w-5kg">
-                                <rect key="frame" x="20" y="527" width="280" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymS-fd-jyW">
                                 <rect key="frame" x="164" y="20" width="64" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -167,11 +160,30 @@
                                     <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="T4B-vv-CVh"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65l-dV-KYp">
+                                <rect key="frame" x="20" y="527" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
-                        <outlet property="flipsLabel" destination="X5H-1w-5kg" id="NuW-vq-qs4"/>
+                        <outlet property="scoreLabel" destination="65l-dV-KYp" id="gn7-gD-HqI"/>
+                        <outletCollection property="cardButtons" destination="VRp-dm-O1r" id="aL7-dj-lsm"/>
+                        <outletCollection property="cardButtons" destination="J2C-Vp-qmm" id="Gbr-kV-k2g"/>
+                        <outletCollection property="cardButtons" destination="era-1r-ULp" id="w1q-3G-G20"/>
+                        <outletCollection property="cardButtons" destination="lst-l5-x8I" id="4TM-Ur-krY"/>
+                        <outletCollection property="cardButtons" destination="tzO-0P-ldB" id="hrW-Fo-icy"/>
+                        <outletCollection property="cardButtons" destination="ymS-fd-jyW" id="NqS-Ff-Nr6"/>
+                        <outletCollection property="cardButtons" destination="a1B-gK-B5Z" id="YZC-B5-MTG"/>
+                        <outletCollection property="cardButtons" destination="r2Q-rJ-CZw" id="jaE-gK-9UB"/>
+                        <outletCollection property="cardButtons" destination="7C0-Rb-Qvf" id="QLn-ax-9bK"/>
+                        <outletCollection property="cardButtons" destination="sbC-Ow-TMw" id="oGC-Hh-TMi"/>
+                        <outletCollection property="cardButtons" destination="6V8-vC-IKy" id="FBY-Sq-GD6"/>
+                        <outletCollection property="cardButtons" destination="LlD-td-I7j" id="bwP-YR-nVN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
